@@ -72,7 +72,7 @@
   :group 'fzf)
 
 (defcustom fzf/position-bottom t
-  "Set the position of the fzf window. Set to nil to position on top."
+n  "Set the position of the fzf window. Set to nil to position on top."
   :type 'bool
   :group 'fzf)
 
@@ -162,7 +162,7 @@
 (defun fzf-directory ()
   "Starts a fzf session at the specified directory."
   (interactive)
-  (fzf/start (ido-read-directory-name "Directory: " fzf/directory-start)))
+  (fzf/start (car (find-file-read-args "Directory: " nil))))
 
 ;;;###autoload
 (defun fzf-git ()
