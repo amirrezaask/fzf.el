@@ -72,7 +72,7 @@
   :group 'fzf)
 
 (defcustom fzf/position-bottom t
-n  "Set the position of the fzf window. Set to nil to position on top."
+  "Set the position of the fzf window. Set to nil to position on top."
   :type 'bool
   :group 'fzf)
 
